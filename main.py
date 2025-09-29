@@ -6,7 +6,7 @@ import seaborn as sns
 from sklearn.cluster import KMeans
 
 # 2. Load the Dataset
-# Make sure the 'Mall_Customers.csv' file is in the same directory
+
 df = pd.read_csv('Mall_Customers.csv')
 
 # 3. Explore the Data
@@ -17,7 +17,7 @@ print(df.info())
 print("\nStatistical Summary:")
 print(df.describe())
 
-# 4. Visualize the Distribution of Important Features
+# 4. Visualize the Distribution of  Features
 plt.figure(figsize=(15, 5))
 
 plt.subplot(1, 3, 1)
@@ -80,6 +80,6 @@ plt.legend()
 plt.grid(True)
 plt.show()
 
-# 9. Optional: View Cluster-Wise Sample
+# 9 View Cluster-Wise Sample
 print("\nSample Data by Cluster:")
 print(df.groupby('Cluster').mean(numeric_only=True))
